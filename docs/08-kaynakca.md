@@ -27,6 +27,12 @@ genişletilmesiyle oluşturulmuştur. Sunumların orijinal dosyaları
   [docs.t3gemstone.org](https://docs.t3gemstone.org)
 - ArduPilot resmi dokümantasyonu:
   [ardupilot.org](https://ardupilot.org)
+- T3 Gemstone O1 — ArduPilot Kurulum ve Cross-Compile Rehberi
+  (gönüllü reposu, T3'ün resmi reposu değildir):
+  [alitalhq/t3gemstone-ardupilot-docs](https://github.com/alitalhq/t3gemstone-ardupilot-docs)
+- T3 Gemstone O1 — ChibiOS Üzerinde ArduCopter
+  (gönüllü reposu, T3'ün resmi reposu değildir):
+  [HaruunGNY/T3-Gemstone-O1-Chibos](https://github.com/HaruunGNY/T3-Gemstone-O1-Chibos)
 
 ---
 
