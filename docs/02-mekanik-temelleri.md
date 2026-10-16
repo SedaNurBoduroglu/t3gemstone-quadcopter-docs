@@ -14,15 +14,15 @@ titreşim etkenlerini ele alır.
 Bir hava aracının uzaydaki yönelimi, birbirine dik üç eksen etrafındaki
 dönüşle tanımlanır:
 
-**1. Yaw (Dönüş) Ekseni**
+**1. Yaw (Yalpa / Sapma) Ekseni**
 Aracın dikey eksine göre sağa ve sola dönmesini sağlar. Bu eksen
 etrafında gerçekleşen dönüşler, aracın yönünü değiştirir.
 
-**2. Pitch (Yüzey) Ekseni**
+**2. Pitch (Yunuslama) Ekseni**
 Aracın enlem eksenine göre yukarı ve aşağı hareketini kontrol eder.
 Burnunun yukarı veya aşağı doğru yön değiştirmesini sağlar.
 
-**3. Roll (Yan) Ekseni**
+**3. Roll (Yuvarlanma) Ekseni**
 Aracın uzunlamasına eksenine göre sağa ve sola yatmasını kontrol eder.
 Kanatların/kolların bir tarafını yukarı veya aşağı doğru döndürmesini
 sağlar.

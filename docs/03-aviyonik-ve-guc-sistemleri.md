@@ -14,8 +14,8 @@ ele alıyoruz.
 
 ### Motor ve ESC Seçimi
 
-İHA'larda fırçasız elektrikli motorlar (BLDC) kullanılır; uzun ömürlü
-ve düşük tolerans avantajı sağlarlar. Fırçasız motorlar doğrudan pil
+İHA'larda fırçasız elektrikli motorlar (BLDC) kullanılır; fırça
+sürtünmesi olmadığı için uzun ömürlü ve verimlidirler. Fırçasız motorlar doğrudan pil
 takılarak çalışmaz, özel bir sürücüye ihtiyaç duyarlar. ESC (Elektronik
 Hız Kontrolcüsü), motorların otopilotla konuşma dilidir: otopilottan
 aldığı sinyallere göre motora ne kadar güç ve kaç devir vereceğini
@@ -141,10 +141,10 @@ Maksimum Pil Ağırlığı = 420 gr
 **Hover Süresi Hesaplama:**
 
 ```
-Pil Akım Kapasitesi = 6 Ah × 60 = 360 A/dk
-Kullanılabilir Kapasite (%80) = 360 × 0.80 = 288 A/dk
+Pil Kapasitesi = 6 Ah × 60 = 360 A·dk
+Kullanılabilir Kapasite (%80) = 360 × 0.80 = 288 A·dk
 Motorların Toplam Akımı = 5 A × 4 = 20 A
-Tahmini Hover Süresi = 288 / 20 = 14,4 dk
+Tahmini Hover Süresi = 288 A·dk / 20 A = 14,4 dk
 ```
 
 **Anlık Amper Limiti:**

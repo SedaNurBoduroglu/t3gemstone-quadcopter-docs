@@ -83,4 +83,6 @@ Bu üç alt sistem sırasıyla [02-mekanik-temelleri.md](02-mekanik-temelleri.md
 [04-yazilim-ve-kontrol-mantigi.md](04-yazilim-ve-kontrol-mantigi.md)
 bölümlerinde ele alınmaktadır.
 
+---
+
 Devam etmek için [02-mekanik-temelleri.md](02-mekanik-temelleri.md).

@@ -70,6 +70,42 @@ Canlı görüntü aktarımı ve gözlükle uçuş deneyimi için.
 Yerden yükseklik sabitleme, engel tanıma ve anlık uçuş verilerini
 bilgisayara aktarma için.
 
+## Gelecek Çalışma: Yapay Zeka ile Otonom Görevler
+
+> Bu bölüm, zaman yetersizliği nedeniyle hayata geçirilemeyen bir
+> proje fikrini anlatır; denenmiş ve doğrulanmış bir kurulum değildir.
+
+[04-yazilim-ve-kontrol-mantigi.md](04-yazilim-ve-kontrol-mantigi.md)
+bölümünde anlatılan ChibiOS/R5F yaklaşımında uçuş kontrolü kartın
+küçük R5F çekirdeğine taşınır ve daha güçlü A53 çekirdekleri büyük
+ölçüde boşa çıkar. Bu dokümanın yazarının fikri, boşa çıkan A53
+tarafını aracın üzerinde çalışan bir **yapay zeka bilgisayarı** olarak
+kullanmaktır. Böylece ayrı bir yardımcı bilgisayara gerek kalmadan,
+tek bir kart hem uçuşu kontrol edip hem de görüntü işleyebilir.
+
+**Önerilen proje:** Kameradan alınan görüntüyü A53 üzerinde işleyen
+(ör. nesne tespiti), çıkardığı bilgiye göre karar veren ve bu kararı
+MAVLink komutları olarak R5F üzerindeki ArduPilot'a ileterek belirli
+görevleri otonom olarak yerine getiren bir yazılım. Örnek görevler:
+
+- Belirli bir hedefi veya nesneyi tespit edip takip etmek,
+- Tespit edilen bir noktanın üzerinde konum tutmak veya oraya inmek,
+- Bir alanı tarayıp bulunan nesneleri işaretlemek.
+
+Bu yaklaşım, ilerleyen aşamada birden fazla İHA'nın birbiriyle
+haberleşerek ortak karar verdiği **sürü İHA** projelerine de
+genişletilebilir.
+
+Bu fikri geliştirmek isteyenler için başlangıç noktaları:
+
+- T3 Gemstone O1'in yapay zeka ekosistemi (Edge AI, model eğitimi,
+  örnekler): [docs.t3gemstone.org](https://docs.t3gemstone.org)
+  üzerindeki "Yapay Zeka" bölümü.
+- ChibiOS/R5F kurulumunun güncel kısıtlamaları (özellikle GPS henüz
+  desteklenmediği için konuma dayalı otonom modların kullanılamaması):
+  [HaruunGNY/T3-Gemstone-O1-Chibos](https://github.com/HaruunGNY/T3-Gemstone-O1-Chibos)
+  (gönüllü reposu, T3'ün resmi reposu değildir).
+
 ---
 
 Devam etmek için [08-kaynakca.md](08-kaynakca.md).

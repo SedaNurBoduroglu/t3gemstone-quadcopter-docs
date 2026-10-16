@@ -9,7 +9,7 @@
 # T3 Gemstone İHA — Eğitim ve Yapım Dokümantasyonu
 
 <p align="center">
-  <a href="https://github.com/SedaNurBoduroglu/Drone"><img alt="Docs repo" src="https://img.shields.io/badge/Docs-repo-red.svg"></a>
+  <a href="https://github.com/SedaNurBoduroglu/t3gemstone-quadcopter-docs"><img alt="Docs repo" src="https://img.shields.io/badge/Docs-repo-red.svg"></a>
   <a href="kaynak-sunumlar"><img alt="Kaynak sunumlar" src="https://img.shields.io/badge/Kaynak-sunumlar-black.svg"></a>
   <a href="https://docs.t3gemstone.org"><img alt="T3 Gemstone Docs" src="https://img.shields.io/badge/T3_Gemstone-docs-blue.svg"></a>
 </p>
@@ -29,10 +29,11 @@
 - İHA türleri ve İHA'nın temel alt sistemleri
 - Mekanik temeller: eksenler, bileşenler, itki-kuvvet dengesi, aerodinamik
 - Aviyonik ve güç sistemleri: motor/ESC/pervane seçimi, batarya hesaplamaları
-- Yazılım ve kontrol mantığı: sensör verisi, PID algoritması, otopilot yazılımı
+- Yazılım ve kontrol mantığı: sensör verisi, PID algoritması, ArduPilot ve ChibiOS
+- T3 Gemstone O1 üzerinde ArduPilot çalıştırmanın iki yaklaşımı (Linux/A53 ve ChibiOS/R5F)
 - Parça seçimi, montaj ve uçtan uca tasarım süreci
 - T3 Gemstone O1 kartı üzerinde ArduPilot ile aviyonik mimarisi
-- Örnek yapılandırmalar (BOM) ve ileri seviye eklentiler
+- Örnek yapılandırmalar (BOM), ileri seviye eklentiler ve yapay zeka ile otonom görevler için gelecek çalışma fikirleri
 
 T3 Gemstone kartının kurulumu (imaj yazma, ilk açılış vb.) gibi genel
 konularda T3'ün resmi dokümantasyonuna yönlendiriyoruz:

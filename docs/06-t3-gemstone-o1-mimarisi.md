@@ -16,7 +16,6 @@ esas alınan temel sistem bileşenleri şunlardır:
 
 | Bileşen | Seçim |
 |---|---|
-| Uçuş Kontrolcüsü | T3 Gemstone O1 |
 | Kumanda & Alıcı | Flysky FS-i6X & FS-iA10B |
 | Güç Dağıtımı & ESC | Bireysel 30A ESC'ler + Matek PDB veya 4'ü 1 arada (4in1) ESC çözümleri |
 | Motorlar | A2212 veya SunnySky X2212 serisi fırçasız motorlar |
@@ -41,14 +40,27 @@ oluşturur.
   hassas konum/yönelim takibi.
 - **Pusula & Barometre:** Dahili AK09916 manyetometre ve yüksek
   hassasiyetli LPS22DFTR yükseklik sensörü.
-- **Güç ve Batarya İzleme:** ADS1115 (16-bit ADC) entegresi ile 4
-  kanallı anlık voltaj ve akım takibi.
+- **Güç ve Batarya İzleme:** I2C üzerinden harici olarak
+  bağlanabilen ADS1115 (16-bit, 4 kanallı ADC) ile anlık voltaj ve
+  akım takibi.
 
 ### Haberleşme ve Çevre Birimleri
 
 - **CAN Bus:** Güvenilir veri iletimi için TCAN1462-Q1 sürücüsü.
 - **GPS & RC:** UART üzerinden GPS ve SBUS kumanda alıcı bağlantısı.
 - **Motor/Servo Kontrolü:** 7 adet donanımsal PWM çıkışı.
+
+### Kart Üzerinde ArduPilot Nasıl Çalışır?
+
+T3 Gemstone O1'in işlemcisinde güçlü **Cortex-A53** çekirdekleri ve
+gerçek zamanlı işler için ayrı bir **Cortex-R5F** çekirdeği bulunur.
+ArduPilot, varsayılan olarak A53 üzerindeki Linux'ta çalışır; deneysel
+bir alternatif olarak R5F üzerinde ChibiOS ile de çalıştırılabilir. Bu
+iki yaklaşımın karşılaştırması ve kurulum rehberlerinin bağlantıları
+[04-yazilim-ve-kontrol-mantigi.md](04-yazilim-ve-kontrol-mantigi.md)
+bölümündeki "Otopilot Yazılımları" başlığındadır. Kartın resmi
+ArduPilot sayfası için:
+[docs.t3gemstone.org/tr/projects/ardupilot](https://docs.t3gemstone.org/tr/projects/ardupilot).
 
 > **Not:** Bu bölümdeki sensör ve arayüz bilgileri, kartın genel
 > donanım yeteneklerini özetler. GPIO pin haritası ve fiziksel

@@ -24,7 +24,7 @@ görevlere odaklanmasını sağlar.
 ## Sensör Verileri ve Temel Kontrol Döngüsü
 
 <p align="center">
-  <img src="images/04-yazilim/kontrol-donguse-blok-semasi.png" width="420" alt="Kontrol döngüsü blok şeması">
+  <img src="images/04-yazilim/kontrol-dongusu-blok-semasi.png" width="420" alt="Kontrol döngüsü blok şeması">
 </p>
 
 **Sensör Verileri (IMU — Jiroskop, İvmeölçer)**
@@ -167,9 +167,12 @@ ArduCopter'ı Linux'tan alıp kartın **R5F** çekirdeğine taşımak ve orada
 - R5F, Linux'a göre çok daha düşük gecikmeli ve öngörülebilir
   zamanlama sunar.
 - Uçuş kontrolü yükünden kurtulan, daha güçlü A53 çekirdekleri başka
-  işlere ayrılabilir. Bizim bu yaklaşımdaki hedefimiz, A53 tarafını
-  bir **yapay zeka / yardımcı bilgisayar** (görüntü işleme, nesne
-  tanıma vb.) gibi kullanabilmektir.
+  işlere ayrılabilir. Bu dokümanın yazarının fikri, boşa çıkan A53
+  tarafını bir **yapay zeka / yardımcı bilgisayar** (görüntü işleme,
+  nesne tanıma, otonom karar verme vb.) olarak kullanmaktır. Bu fikrin
+  ayrıntıları ve önerilen proje için
+  [07-ornek-yapilandirmalar-ve-eklentiler.md](07-ornek-yapilandirmalar-ve-eklentiler.md)
+  bölümündeki "Gelecek Çalışma" başlığına bakınız.
 
 Bu yaklaşımın kurulumunu, derlenmesini, karta yüklenmesini ve bilinen
 kısıtlamalarını anlatan repo:
@@ -211,11 +214,16 @@ kısıtlamalarını anlatan repo:
 - **Bu bölümdeki teknik açıklamalar, söz konusu repoların incelenmesiyle
   özetlenmiştir.** Çekirdek mimarisi, yöntemlerin işleyişi ve
   kısıtlamalar konusunda en güncel ve doğru bilgi için doğrudan ilgili
-  repolara başvurunuz. Özellikle A53 çekirdeklerinin yapay zeka gibi
-  amaçlarla kullanılması, R5F yaklaşımının hedeflenen bir faydasıdır;
-  repolarda bu kullanıma dair hazır bir uygulama bulunmamaktadır.
+  repolara başvurunuz.
+- **A53'ün yapay zeka için kullanılması bu dokümanın yazarının
+  fikridir.** ChibiOS reposu R5F'e geçişin gerekçesi olarak gerçek
+  zamanlı ve öngörülebilir zamanlamayı öne çıkarır; repolarda A53
+  tarafında yapay zeka çalıştıran hazır bir uygulama bulunmamaktadır.
 
-T3 Gemstone O1 kartının genel mimarisi için
+T3'ün kendi resmi ArduPilot sayfası (APT paketiyle kurulum, pin
+haritası, servis yönetimi) için:
+[docs.t3gemstone.org/tr/projects/ardupilot](https://docs.t3gemstone.org/tr/projects/ardupilot).
+T3 Gemstone O1 kartının aviyonik mimarisi için
 [06-t3-gemstone-o1-mimarisi.md](06-t3-gemstone-o1-mimarisi.md)
 bölümüne bakınız.
 
